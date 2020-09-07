@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Ritsworld</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- slider css-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="page-wrapper">
+    <header>
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+				    <a href="index.html"><img src="img/logo.png" alt="Ritsworld" class="inner-logo"></a>
+				</div>
+				<div class="col-sm-7">
+				    <form class="search-form" action="">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+				</div>
+				<div class="col-sm-3">
+				    <ul>
+				        <li><img src="img/user-icon.png" class="user-icon" id="login-btn"></li>
+				        <li><span id="add_post"><a href="add-post.html" class="add-post-btn" id="add_post_btn">Add Post</a></span></li> 
+				        
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end header -->
+
+    <div class="post-section add-post-main"><!--  Start post section  -->
+		<div class="container"> <!--  Start container  -->
+		
+		    <div class="add-post-section">
+		        <div class="add-post-header">
+		            <h3>Add Post</h3>
+		        </div>
+		        <div class="post-form-section">
+		              <form action="profile.html" class="post-form" method="POST">
+						    <div class="form-group">
+                                <input type="text" id="manufacture" name="manufacture" value="" placeholder="Name of Manufacture">
+							</div>
+							<div class="form-group">
+                                <input type="text" id="name-machine" name="name-machine" value="" placeholder="Name of the Machine">
+							</div>
+							<div class="form-group">
+		                        <input type="text" id="age-machine" name=" age-machine" value="" placeholder=" Age of the Machine">
+							</div>
+							<div class="form-group">
+		                        <textarea id="about-machine" name="about-machine" value="" placeholder="About the Machine"></textarea>
+							</div>
+							<div class="form-group upload-img">
+		                        <input type="file" multiple id="file" name="file" value="" placeholder="Add Machine Images" >
+		                        <!-- <img id="file-image" src="#" alt="Preview" class="hidden">-->
+		                        <div class="box">
+		                         <p>Add Machine Images</p>
+		                         <p><span>( Drag & drop images here)</span></p>
+		                         </div>
+							</div>
+							<div class="form-group">
+							      <input type="submit" value="Submit" class="submit">
+							</div> 
+                        </form> 
+		        </div>
+		    </div>
+		    
+		</div> <!--  End container  -->
+	</div><!--  End post section  -->
+	
+	
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/login-modal.js"></script>
+
+
+
+<!--Start phone confirmation modal -->
+ <div class="confirm-number-modal mymodal" id="confirm_phone" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <img src="img/logo.png" alt="Ritsworld" class="popup-logo">
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="phone-otp">
+                     <h3>Enter phone number</h3>
+                     <form action=""> 
+                        <input type="tel" id="phone-number" name="phone-number" value="" placeholder="Phone number" ><br>
+                        <input type="submit" value="Sent otp" class="submit">
+                     </form> 
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="phone-otp">
+                  <h3>Enter OTP here</h3>
+                  <form action=""> 
+                        <input type="text" id="otp" name="otp" value="" ><br>
+                        <input type="submit" value="Login" class="submit">
+                     </form> 
+                     </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!--End phone confirmation modal -->
+  
+  
+  
+  <!--Start Login modal -->
+  
+  <div class="login-btn-modal mymodal" id="login_mymodal">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h3>Login</h3>
+          <p>with your social media account</p>
+        </div>
+        <div class="modal-body">
+            <div class="login-box">
+                  <ul>
+                   <li><a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a></li>
+                   <li><a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a></li>
+                   <li><a href="#" class="linkedin btn"><i class="fa fa-linkedin fa-fw"></i> Login with Linkedin</a></li>
+                   <li><a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!--End Login modal -->
+
+</body>
+</html>

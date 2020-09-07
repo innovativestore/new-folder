@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Ritsworld</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- slider css-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!-- Start Header-->
+    <header>
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+				    <a href="index.html"><img src="img/logo.png" alt="Ritsworld" class="inner-logo"></a>
+				</div>
+				<div class="col-sm-7">
+				    <form class="search-form" action="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+				</div>
+				<div class="col-sm-3">
+				    <ul>
+					    <li><img src="img/user-icon.png" class="user-icon" id="login-btn"></li>
+					    <li><a href="add-post.html" class="add-post-btn" id="add_post_btn">Add Post</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header-->
+
+<div class="main-section profile-page"><!-- Start Main Section -->
+	<div class="hoizonatal-tabs">
+	    <ul class="nav nav-tabs" role="tablist" id="myTab">
+            <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li><a href="#enquiries" role="tab" data-toggle="tab">Enquiries</a></li>
+            <li><a href="#post" role="tab" data-toggle="tab">Post</a></li>
+            <li><a href="#notifications" role="tab" data-toggle="tab">Notifications</a></li>
+            <li><a href="#wishlist" role="tab" data-toggle="tab">Wishlist</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container"><!-- Start Container -->
+        
+                <div class="tab-content"><!-- Start Tab Content Section -->
+    
+                    <div class="tab-pane" id="profile">
+					<div class="row">
+	                    <div class="col-sm-8">
+                        <form action="" class="profile-form">
+						    <div class="form-group">
+                                <input type="text" id="name" name="name" value="" placeholder="Name">
+							</div>
+							<div class="form-group">
+                                <input type="tel" id="mobile_number" name="mobile_number" value="" placeholder="Mobile Number">
+							</div>
+							<div class="form-group">
+		                        <input type="email" id="email_address" name="email_address" value="" placeholder="Email Address">
+							</div>
+							<div class="form-group">
+		                        <input type="text" id="company_name" name="company_name" value="" placeholder="Company Name">
+							</div>
+							<div class="form-group">
+		                        <input type="text" id="address_line" name="address_line" value="" placeholder="Address Line">
+							</div>
+							<div class="form-group">
+		                        <select name="country" id="country">
+		                            <option value="">Select Country</option>
+                                    <option value="india">India</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="nz">New Zealand</option>
+                                    <option value="as">Australia</option>
+                                </select>
+							</div>
+							<div class="form-group">
+		                        <select name="state" id="state">
+		                            <option value="">Select state</option>
+                                    <option value="ap">Andhra Pradesh</option>
+                                    <option value="arp">Arunachal Pradesh</option>
+                                    <option value="assam">Assam</option>
+                                    <option value="bihar">Bihar</option>
+                                </select>
+							</div>
+							<div class="form-group">
+		                         <select name="year-establishment" id="year-establishment">
+		                            <option value="">Year of Establishment</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                </select>
+							</div>							
+							<div class="form-group">
+		                        <input type="text" id="city" name="city" value="" placeholder="City" >
+							</div>
+							<div class="form-group">
+							    <div class="row">
+                                    <div class="col-sm-6">
+									    <input type="submit" value="Edit" class="submit edit-btn">
+									</div>
+									<div class="col-sm-6">
+									    <input type="submit" value="Save" class="submit save-btn">
+									</div>
+								</div> 
+							</div> 
+                        </form> 
+						</div>
+			<div class="col-sm-4"></div>
+	    </div>
+                    </div>
+   
+                    <div class="tab-pane" id="enquiries">
+					     <div class="enquiries-section">
+							       <table>
+						    <thead>
+                                <tr>
+                                    <th>SI No</th>
+                                    <th>Name</th>
+                                    <th>Contact</th>
+									<th>Email ID</th>
+									<th>Location</th>
+									<th>Machine Name</th>
+									<th>Requirement</th>
+                                </tr>
+							</thead>
+							<tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Kiran Sharma</td>
+                                    <td>9852545256</td>
+									<td>kiransharma@gmail.com</td>
+									<td>Delhi</td>
+									<td>Name</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</td>
+                                </tr>
+								<tr>
+                                    <td>2</td>
+                                    <td>Karan Mukharjee</td>
+                                    <td>9852545256</td>
+									<td>karanmukharjee@gmail.com</td>
+									<td>Delhi</td>
+									<td>Name</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</td>
+                                </tr>
+								<tr>
+                                    <td>3</td>
+                                    <td>Priyanka Sharma</td>
+                                    <td>9852545256</td>
+									<td>priyankasharma@gmail.com</td>
+									<td>Delhi</td>
+									<td>Name</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</td>
+                                </tr>
+								<tr>
+                                    <td>4</td>
+                                    <td>Ankush Nayak</td>
+                                    <td>9852545256</td>
+									<td>ankushnayak@gmail.com</td>
+									<td>Delhi</td>
+									<td>Name</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+						</div>
+					
+					</div>
+                    <div class="tab-pane" id="post">
+                        
+                         <!--  Start 1nd post  -->
+		    
+		     <div class="post-single-section">
+			
+                <!-- Start post-header-->			
+		        <div class="post-header">
+				    <div class="align-left"> 
+				        <h4 class="post-sub-title">SAMSUNG GALAXY M31</h4>
+                        <div class="post-title-box">					
+					        <ul>
+						        <li> 
+							        <h3 class="post-title">Lorem ipsum dolor magna</h3>
+							    </li>
+							    <li>
+							        <span class="active">Available</span>
+							     </li>
+						    </ul>
+						</div>
+						<div class="location-date">
+						    <ul>
+						        <li><span class="location">Bangalore</span></li>
+						   <li><span class="date">18 Aug 2020, 9:45 PM</span></li>
+						    </ul>
+						</div>
+					</div>
+					<div class="align-right">
+					      <ul>
+					        <li> <a href="#" class="edit-btn">Edit</a></li>
+					        <li> <a href="#" class="delete-btn">Delete</a></li>
+					   </ul>
+					</div>
+				</div> <!-- End post-header-->
+		        <div class= "clearfix"></div>
+		        
+		        
+				<div class="post-single-content">
+				    <div class="post-content-inner">
+				   <h3 class="post-title">Samsung Mobiles Pvt Ltd</h3>
+				   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...<a href="#" class="more">more</a></p>
+				
+				    <div class=" row post-slider">
+				        <div class="slick-carousel">
+					        <div><img src="img/blog/blog1.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog2.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog3.png" class="post-grid"></div>
+					        <div> <img src="img/blog/blog1.png" class="post-grid"> </div>
+				        </div>
+				    </div>
+				    </div>
+				
+				
+			</div>
+		
+		    </div>
+		    
+		    <!-- End 1nd post -->
+		    
+		     <!--  Start 1nd post  -->
+		    
+		     <div class="post-single-section">
+			
+                <!-- Start post-header-->			
+		        <div class="post-header">
+				    <div class="align-left"> 
+				        <h4 class="post-sub-title">SAMSUNG GALAXY M31</h4>
+                        <div class="post-title-box">					
+					        <ul>
+						        <li> 
+							        <h3 class="post-title">Lorem ipsum dolor magna</h3>
+							    </li>
+							    <li>
+							        <span class="active">Available</span>
+							     </li>
+						    </ul>
+						</div>
+						<div class="location-date">
+						    <ul>
+						        <li><span class="location">Bangalore</span></li>
+						   <li><span class="date">18 Aug 2020, 9:45 PM</span></li>
+						    </ul>
+						</div>
+					</div>
+					<div class="align-right">
+					    <ul>
+					        <li> <a href="#" class="edit-btn">Edit</a></li>
+					        <li> <a href="#" class="delete-btn">Delete</a></li>
+					   </ul>
+					</div>
+				</div> <!-- End post-header-->
+		        <div class= "clearfix"></div>
+		        
+		        
+				<div class="post-single-content">
+				    <div class="post-content-inner">
+				   <h3 class="post-title">Samsung Mobiles Pvt Ltd</h3>
+				   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...<a href="#" class="more">more</a></p>
+				
+				    <div class=" row post-slider">
+				        <div class="slick-carousel">
+					        <div><img src="img/blog/blog1.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog2.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog3.png" class="post-grid"></div>
+					        <div> <img src="img/blog/blog1.png" class="post-grid"> </div>
+				        </div>
+				    </div>
+				    </div>
+			</div>
+		
+		    </div>
+		    
+		    <!-- End 2nd post -->
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="tab-pane" id="notifications">
+                        <div class="notifications-section">
+						     <div class="row">
+							    <div class="col-sm-12 msg-box new-msg"><!--    start col -->
+								    <ul class="parent">
+									    <li><img src="img/user-icon.png" class="user-icon"></li>
+										<li>
+										    <ul class="child1">
+											    <li>
+												    <h3 class="name">Lorem Ipsum </h3>
+													<span class="date">18 Aug 2020, 9:45 PM</span>
+												</li>
+												<li><div class="dot-btns"><span class="dot-btn">...</span>
+												         
+											   	    </div>
+											    </li>
+											</ul>
+											<ul class="child2">
+											    <li class="comment"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum has been the industry's standard dummy.</p></li>
+												<li class="reply">
+												    <ul>
+													    <li><img src="img/user-icon.png" class="user-icon"></li>
+														<li>
+														    <h3 class="name">Lorem Ipsum </h3>
+															<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum has been the industry's standard dummy.</p>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div><!--    end col -->
+								
+								<div class="col-sm-12 msg-box"><!--    start col -->
+								    <ul class="parent">
+									    <li><img src="img/user-icon.png" class="user-icon"></li>
+										<li>
+										    <ul class="child1">
+											    <li>
+												    <span class="name">Lorem Ipsum </span>
+													<span class="date">18 Aug 2020, 9:45 PM</span>
+												</li>
+												<li>
+												    <div class="dot-btns"><span class="dot-btn">...</span>
+												         
+											   	    </div>
+												</li>
+											</ul>
+											<ul class="child2">
+											    <li class="comment"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum has been the industry's standard dummy.</p></li>
+											</ul>
+										</li>
+									</ul>
+								</div><!--    end col -->
+								
+								<div class="col-sm-12 msg-box"><!--    start col -->
+								    <ul class="parent">
+									    <li><img src="img/user-icon.png" class="user-icon"></li>
+										<li>
+										    <ul class="child1">
+											    <li>
+												    <span class="name">Lorem Ipsum </span>
+													<span class="date">18 Aug 2020, 9:45 PM</span>
+												</li>
+												<li>
+												    <div class="dot-btns"><span class="dot-btn">...</span>
+												         <div class="option"><a href="#">Delete</a></div>
+											   	    </div>
+												</li>
+											</ul>
+											<ul class="child2">
+											    <li class="comment"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum has been the industry's standard dummy.</p></li>
+											</ul>
+										</li>
+									</ul>
+								</div><!--    end col -->
+								
+							</div>
+						</div>
+                    </div>
+                   <div class="tab-pane" id="wishlist">
+                              
+                         <!--  Start 1nd post  -->
+		    
+		     <div class="post-single-section">
+			
+                <!-- Start post-header-->			
+		        <div class="post-header">
+				    <div class="align-left"> 
+				        <h4 class="post-sub-title">SAMSUNG GALAXY M31</h4>
+                        <div class="post-title-box">					
+					        <ul>
+						        <li> 
+							        <h3 class="post-title">Lorem ipsum dolor magna</h3>
+							    </li>
+							    <li>
+							        <span class="active">Available</span>
+							     </li>
+						    </ul>
+						</div>
+						<div class="location-date">
+						    <ul>
+						        <li><span class="location">Bangalore</span></li>
+						   <li><span class="date">18 Aug 2020, 9:45 PM</span></li>
+						    </ul>
+						</div>
+					</div>
+					<div class="align-right">
+					   <span class="contact-seller">Contact Seller</span>
+					</div>
+				</div> <!-- End post-header-->
+		        <div class= "clearfix"></div>
+		        
+		        
+				<div class="post-single-content">
+				    <div class="post-content-inner">
+				   <h3 class="post-title">Samsung Mobiles Pvt Ltd</h3>
+				   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...<a href="#" class="more">more</a></p>
+				
+				    <div class=" row post-slider">
+				        <div class="slick-carousel">
+					        <div><img src="img/blog/blog1.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog2.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog3.png" class="post-grid"></div>
+					        <div> <img src="img/blog/blog1.png" class="post-grid"> </div>
+				        </div>
+				    </div>
+				    </div>
+				
+				
+			</div>
+		
+		    </div>
+		    
+		    <!-- End 1nd post -->
+		    
+		     <!--  Start 1nd post  -->
+		    
+		     <div class="post-single-section">
+			
+                <!-- Start post-header-->			
+		        <div class="post-header">
+				    <div class="align-left"> 
+				        <h4 class="post-sub-title">SAMSUNG GALAXY M31</h4>
+                        <div class="post-title-box">					
+					        <ul>
+						        <li> 
+							        <h3 class="post-title">Lorem ipsum dolor magna</h3>
+							    </li>
+							    <li>
+							        <span class="active">Available</span>
+							     </li>
+						    </ul>
+						</div>
+						<div class="location-date">
+						    <ul>
+						        <li><span class="location">Bangalore</span></li>
+						   <li><span class="date">18 Aug 2020, 9:45 PM</span></li>
+						    </ul>
+						</div>
+					</div>
+					<div class="align-right">
+					   <span class="contact-seller">Contact Seller</span>
+					</div>
+				</div> <!-- End post-header-->
+		        <div class= "clearfix"></div>
+		        
+		        
+				<div class="post-single-content">
+				    <div class="post-content-inner">
+				   <h3 class="post-title">Samsung Mobiles Pvt Ltd</h3>
+				   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...<a href="#" class="more">more</a></p>
+				
+				    <div class=" row post-slider">
+				        <div class="slick-carousel">
+					        <div><img src="img/blog/blog1.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog2.png" class="post-grid"></div>
+					        <div><img src="img/blog/blog3.png" class="post-grid"></div>
+					        <div> <img src="img/blog/blog1.png" class="post-grid"> </div>
+				        </div>
+				    </div>
+				    </div>
+			</div>
+		
+		    </div>
+		    
+		    <!-- End 2nd post -->
+                  
+                  </div>
+                </div><!-- End Tab Content Section -->
+	        
+    </div><!-- End Container -->
+
+</div><!-- End Main Section -->
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/navtab.js"></script>
+<script src="js/login-modal.js"></script>
+
+
+
+<!--Start phone confirmation modal -->
+ <div class="confirm-number-modal modal" id="confirm_phone">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-top-header">
+            <button class="close">X</button>
+        </div> 
+        <div class="modal-header">
+          
+          <img src="img/logo.png" alt="Ritsworld" class="popup-logo">
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="phone-otp">
+                     <h3>Enter phone number</h3>
+                     <form action=""> 
+                        <input type="tel" id="phone-number" name="phone-number" value="" placeholder="Phone number" ><br>
+                        <input type="submit" value="Sent otp" class="submit">
+                     </form> 
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="phone-otp">
+                  <h3>Enter OTP here</h3>
+                  <form action=""> 
+                        <input type="text" id="otp" name="otp" value="" ><br>
+                        <input type="submit" value="Login" class="submit">
+                     </form> 
+                     </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!--End phone confirmation modal -->
+  
+  
+  
+  <!--Start Login modal -->
+  
+  <div class="login-btn-modal modal" id="login_mymodal">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+           <div class="modal-top-header">
+            <button class="close">X</button>
+        </div> 
+        <div class="modal-header">
+          
+          <h3>Login</h3>
+          <p>with your social media account</p>
+        </div>
+        <div class="modal-body">
+            <div class="login-box">
+                 <ul>
+                   <li><a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a></li>
+                   <li><a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a></li>
+                   <li><a href="#" class="linkedin btn"><i class="fa fa-linkedin fa-fw"></i> Login with Linkedin</a></li>
+                   <li><a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!--End Login modal -->
+
+
+</body>
+</html>
